@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-webgl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KTL Tech Hub – AI-powered apps &amp; digital products</title>
   <meta name="description" content="KTL Tech Hub builds AI-powered apps, digital products, and YouTube content automation. Play Store developer: KTL Tech Hub.">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
       <a class="brand" href="index.html">
-        <img src="assets/logo.png" width="40" height="40" alt="KTL Tech Hub logo">
+        <img src="logo.png" width="40" height="40" alt="KTL Tech Hub logo">
         <span>KTL Tech Hub</span>
       </a>
       <nav class="nav" aria-label="Primary">
@@ -25,34 +25,44 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <img class="hero-logo" src="assets/logo.png" width="112" height="112" alt="KTL Tech Hub">
-        <h1>KTL Tech Hub</h1>
+    <section class="hero" aria-label="Introduction">
+      <canvas id="hub-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-fallback" aria-hidden="true">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="orb orb-c"></div>
+      </div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge">00 · INDIA · STUDIO</div>
+        <h1>KTL <span class="accent">Tech</span> Hub</h1>
         <p class="tagline">AI-powered apps, digital products &amp; YouTube content automation.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="apps.html">Our apps</a>
           <a class="btn btn-ghost" href="contact.html">Contact</a>
         </div>
       </div>
+      <div class="scroll-hint" aria-hidden="true">Scroll<span></span></div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="accent-bar" aria-hidden="true"></div>
-        <h2>About</h2>
-        <p>
+        <div class="accent-bar reveal" aria-hidden="true"></div>
+        <h2 class="reveal">About</h2>
+        <p class="lead reveal reveal-delay-1">
           KTL Tech Hub is an independent developer brand from India. We build simple,
           useful Android apps and digital products, and we help creators with YouTube
           content automation. Our apps are published on Google Play under the developer
           name <strong>KTL Tech Hub</strong>.
         </p>
-        <div class="about-grid" style="margin-top: 1.5rem;">
-          <div class="card">
+        <div class="about-grid" style="margin-top: 0.5rem;">
+          <div class="card reveal">
+            <div class="card-icon" aria-hidden="true">◎</div>
             <h3>Apps</h3>
-            <p>Focused Android tools — starting with Mantra Japa Counter — built for everyday use.</p>
+            <p>Focused Android tools — Mantra Japa Counter and Chess Dude — built for everyday learning and practice.</p>
           </div>
-          <div class="card">
+          <div class="card reveal reveal-delay-1">
+            <div class="card-icon" aria-hidden="true">◈</div>
             <h3>Digital products &amp; content</h3>
             <p>Digital products and YouTube content automation for creators and small teams.</p>
           </div>
@@ -62,10 +72,38 @@
 
     <section class="section section-alt">
       <div class="container">
-        <div class="accent-bar" aria-hidden="true"></div>
-        <h2>Get in touch</h2>
-        <p>Questions about our apps or privacy? Email us anytime.</p>
-        <p><a class="btn btn-primary" href="mailto:ktltechhub@gmail.com">ktltechhub@gmail.com</a></p>
+        <div class="accent-bar reveal" aria-hidden="true"></div>
+        <h2 class="reveal">Featured apps</h2>
+        <p class="lead reveal reveal-delay-1">Published on Google Play as <strong>KTL Tech Hub</strong>.</p>
+        <div class="app-list">
+          <article class="app-card reveal">
+            <div class="app-icon" aria-hidden="true">ॐ</div>
+            <div>
+              <span class="badge">Closed testing on Google Play</span>
+              <h3>Mantra Japa Counter</h3>
+              <p>Counts mantra japa — streaks, badges, reminders, and optional Google sign-in.</p>
+              <p class="app-meta"><a href="apps.html">View on Apps</a> · <a href="privacy.html">Privacy policy</a></p>
+            </div>
+          </article>
+          <article class="app-card reveal reveal-delay-1">
+            <div class="app-icon" aria-hidden="true">♞</div>
+            <div>
+              <span class="badge badge-muted">Coming soon</span>
+              <h3>Chess Dude</h3>
+              <p>Premium chess learning with grandpa coach <strong>Coach Max</strong> — lessons, practice, and a friendly guide.</p>
+              <p class="app-meta"><a href="apps.html">View on Apps</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="accent-bar reveal" aria-hidden="true"></div>
+        <h2 class="reveal">Get in touch</h2>
+        <p class="lead reveal reveal-delay-1">Questions about our apps or privacy? Email us anytime.</p>
+        <p class="reveal reveal-delay-2"><a class="btn btn-primary" href="mailto:ktltechhub@gmail.com">ktltechhub@gmail.com</a></p>
       </div>
     </section>
   </main>
@@ -80,5 +118,8 @@
       </nav>
     </div>
   </footer>
+
+  <script src="hub-scene.js" defer></script>
+  <script src="site.js" defer></script>
 </body>
 </html>
