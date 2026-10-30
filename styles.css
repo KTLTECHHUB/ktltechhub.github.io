@@ -489,7 +489,7 @@ main { flex: 1; position: relative; }
   border-color: rgba(255, 107, 0, 0.4);
 }
 
-.app-icon {
+.app-icon { overflow: hidden;
   flex-shrink: 0;
   width: 72px;
   height: 72px;
