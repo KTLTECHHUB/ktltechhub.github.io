@@ -10,6 +10,7 @@
   if (!canvas) return;
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var isMobile = window.matchMedia('(max-width: 767px)').matches;
   var hero = canvas.closest('.hero') || document.body;
 
   function failGracefully() {
@@ -18,7 +19,8 @@
     canvas.style.display = 'none';
   }
 
-  if (reduceMotion) { failGracefully(); return; }
+  // site.js owns static-hero swap; never pull three.min.js on mobile / reduced motion
+  if (reduceMotion || isMobile) { failGracefully(); return; }
 
   var script = document.createElement('script');
   script.src = 'three.min.js';

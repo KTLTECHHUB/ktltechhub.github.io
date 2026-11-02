@@ -5,7 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Apps – KTL Tech Hub</title>
   <link rel="canonical" href="https://ktltechhub.com/apps.html">
-  <meta name="description" content="Android apps by KTL Tech Hub. Mantra Japa Counter (closed testing) and Chess Dude (coming soon) on Google Play.">
+  <meta name="description" content="Android apps by KTL Tech Hub: Mantra Japa Counter, Chess Dude, and UploadDude. Pricing, features, and early access.">
+  <meta property="og:title" content="Apps – KTL Tech Hub">
+  <meta property="og:description" content="Mantra Japa Counter, Chess Dude, and UploadDude from KTL Tech Hub.">
+  <meta property="og:url" content="https://ktltechhub.com/apps.html">
+  <meta property="og:image" content="https://ktltechhub.com/og-banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ktltechhub.com/og-banner.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"SoftwareApplication","name":"Mantra Japa Counter","applicationCategory":"LifestyleApplication","operatingSystem":"Android","offers":{"@type":"Offer","price":"99.00","priceCurrency":"INR"},"publisher":{"@type":"Organization","name":"KTL Tech Hub"}},
+    {"@type":"SoftwareApplication","name":"Chess Dude","applicationCategory":"EducationalApplication","operatingSystem":"Android","offers":{"@type":"Offer","price":"99.00","priceCurrency":"INR"},"publisher":{"@type":"Organization","name":"KTL Tech Hub"}},
+    {"@type":"SoftwareApplication","name":"UploadDude","applicationCategory":"MultimediaApplication","operatingSystem":"Android","offers":{"@type":"Offer","price":"0","priceCurrency":"INR","availability":"https://schema.org/ComingSoon"},"publisher":{"@type":"Organization","name":"KTL Tech Hub"}}
+  ]}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
@@ -31,49 +47,199 @@
   <main>
     <div class="page-hero">
       <div class="container">
+        <p class="eyebrow">Google Play · KTL Tech Hub</p>
         <h1>Apps</h1>
-        <p>Published on Google Play as <strong>KTL Tech Hub</strong>.</p>
+        <p>Three privacy-first Android products — practice, learning, and creator automation.</p>
+        <nav class="app-jump" aria-label="Jump to app">
+          <a href="#mantra-japa">Mantra Japa Counter</a>
+          <a href="#chess-dude">Chess Dude</a>
+          <a href="#uploaddude">UploadDude</a>
+        </nav>
       </div>
     </div>
 
-    <section class="section">
-      <div class="container app-list">
-        <article class="app-card reveal">
-          <div class="app-icon"><img src="icon-mantra-japa.png" alt="Mantra Japa Counter icon" width="64" height="64" style="width:100%;height:100%;border-radius:inherit;object-fit:cover;display:block"></div>
-          <div>
+    <!-- Mantra Japa Counter -->
+    <section class="section" id="mantra-japa" aria-labelledby="mantra-heading">
+      <div class="container">
+        <article class="feature-row reveal">
+          <div class="feature-media">
+            <div class="phone">
+              <div class="phone-screen">
+                <img src="img/mantra-1.webp" width="780" height="1386" alt="Mantra Japa Counter screenshot" loading="lazy">
+                <div class="phone-badge">
+                  <img src="icon-mantra-japa.png" width="36" height="36" alt="" loading="lazy">
+                  <span>Mantra Japa Counter</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-copy">
             <span class="badge">Closed testing on Google Play</span>
-            <h3>Mantra Japa Counter</h3>
-            <p>Counts mantra japa. Track rounds, streaks, badges, and daily reminders. Optional Google sign-in; counts stay on your device.</p>
-            <p class="app-meta">
-              <a href="privacy.html">Privacy policy</a>
-            </p>
+            <h2 id="mantra-heading">Mantra Japa Counter</h2>
+            <p>Counts mantra japa — streaks, badges, reminders, and optional Google sign-in. Counts stay on your device unless you choose to sign in.</p>
+            <ul class="feature-list">
+              <li><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>One-tap japa counting with streak tracking</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Reminders and badges to keep practice going</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Optional Google sign-in; published privacy policy</span></li>
+            </ul>
+            <div class="price-table" aria-label="Mantra Japa pricing">
+              <div class="price-card"><div class="plan">Monthly</div><div class="amount">₹99</div><p class="note">per month</p></div>
+              <div class="price-card"><div class="plan">Yearly</div><div class="amount">₹599</div><p class="note">per year</p></div>
+              <div class="price-card"><div class="plan">Testing</div><div class="amount">Join</div><p class="note">closed testing on Play</p></div>
+            </div>
+            <a class="btn btn-primary" href="https://play.google.com/apps/testing/com.ktltechhub.mantrajapa" rel="noopener noreferrer">Join closed testing</a>
+            <p class="app-meta" style="margin-top:0.9rem;font-size:0.9rem;color:var(--muted)"><a href="privacy.html">Privacy policy</a> · <a href="privacy-mantra-japa.html">Mantra Japa privacy</a></p>
           </div>
         </article>
-
-        <article class="app-card reveal reveal-delay-1">
-          <div class="app-icon"><img src="icon-chess-dude.png" alt="Chess Dude icon" width="64" height="64" style="width:100%;height:100%;border-radius:inherit;object-fit:cover;display:block"></div>
-          <div>
-            <span class="badge badge-muted">Coming soon</span>
-            <h3>Chess Dude</h3>
-            <p>A premium chess learning app with grandpa coach <strong>Coach Max</strong>. Learn openings, tactics, and endgames with a warm, guided experience.</p>
-          </div>
-        </article>
-
-        <div class="placeholder-card reveal reveal-delay-2">
-          <p style="margin: 0;"><strong>More apps</strong> — future releases from KTL Tech Hub will appear here.</p>
+        <div class="shot-grid reveal reveal-delay-1" aria-label="Mantra Japa screenshots">
+          <div class="shot-slot shot-slot--filled"><img src="img/mantra-1.webp" width="780" height="1386" alt="Mantra Japa Counter — counter screen" loading="lazy"></div>
+          <div class="shot-slot shot-slot--filled"><img src="img/mantra-2.webp" width="780" height="1386" alt="Mantra Japa Counter — mantras screen" loading="lazy"></div>
+          <div class="shot-slot shot-slot--filled"><img src="img/mantra-3.webp" width="780" height="1386" alt="Mantra Japa Counter — badges screen" loading="lazy"></div>
         </div>
+      </div>
+    </section>
+
+    <!-- Chess Dude -->
+    <section class="section section-alt" id="chess-dude" aria-labelledby="chess-heading">
+      <div class="container">
+        <article class="feature-row feature-row--reverse reveal">
+          <div class="feature-media">
+            <div class="phone">
+              <div class="phone-screen">
+                <img src="img/chess-1.webp" width="780" height="1688" alt="Chess Dude home screen" loading="lazy">
+                <div class="phone-badge">
+                  <img src="icon-chess-dude.png" width="36" height="36" alt="" loading="lazy">
+                  <span>Chess Dude</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-copy">
+            <span class="badge badge-muted">Launching soon</span>
+            <h2 id="chess-heading">Chess Dude</h2>
+            <p>Premium chess learning with grandpa coach <strong>Coach Max</strong> — lessons, practice, and a friendly guide.</p>
+            <ul class="feature-list">
+              <li><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Guided lessons with Coach Max</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Practice modes for everyday improvement</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Warm, premium learning experience</span></li>
+            </ul>
+            <div class="price-table" aria-label="Chess Dude pricing">
+              <div class="price-card"><div class="plan">Monthly</div><div class="amount">₹99</div><p class="note">per month</p></div>
+              <div class="price-card"><div class="plan">Yearly</div><div class="amount">₹599</div><p class="note">per year</p></div>
+              <div class="price-card"><div class="plan">Lifetime</div><div class="amount">₹3,750</div><p class="note">launch offer ₹1,999</p></div>
+            </div>
+            <form class="notify-form" action="https://formspree.io/f/xnppoqgd" method="POST">
+              <input type="hidden" name="app" value="Chess Dude">
+              <label class="visually-hidden" for="notify-chess-apps" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Email for Chess Dude launch</label>
+              <input id="notify-chess-apps" type="email" name="email" required placeholder="you@email.com" autocomplete="email">
+              <button class="btn btn-primary" type="submit">Notify me at launch</button>
+            </form>
+          </div>
+        </article>
+        <div class="shot-grid reveal reveal-delay-1" aria-label="Chess Dude screenshots">
+          <div class="shot-slot shot-slot--filled"><img src="img/chess-1.webp" width="780" height="1688" alt="Chess Dude — home" loading="lazy"></div>
+          <div class="shot-slot shot-slot--filled"><img src="img/chess-2.webp" width="780" height="1688" alt="Chess Dude — in game" loading="lazy"></div>
+          <div class="shot-slot shot-slot--filled"><img src="img/chess-3.webp" width="780" height="1688" alt="Chess Dude — puzzle" loading="lazy"></div>
+        </div>
+        <p class="reveal" style="margin-top:1rem;color:var(--muted);font-size:0.9rem">Also crafting 3D piece art for the board — preview below.</p>
+        <img class="reveal reveal-delay-1" src="img/chess-pieces.webp" width="1024" height="438" alt="Chess Dude 3D piece renders" loading="lazy" style="width:100%;max-width:720px;border-radius:16px;border:1px solid var(--glass-border);margin-top:0.5rem">
+      </div>
+    </section>
+
+    <!-- UploadDude -->
+    <section class="section" id="uploaddude" aria-labelledby="upload-heading">
+      <div class="container">
+        <article class="feature-row reveal">
+          <div class="feature-media">
+            <div class="phone">
+              <div class="phone-screen" style="display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.75rem;padding:1.5rem;text-align:center">
+                <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" style="width:48px;height:48px"><path d="M12 16V4"/><path d="m8 8 4-4 4 4"/><path d="M20 16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2"/></svg>
+                <span style="font-family:var(--font-display);font-weight:700;color:var(--text)">UploadDude</span>
+                <span style="font-size:0.85rem;color:var(--muted)">Coming soon</span>
+              </div>
+            </div>
+          </div>
+          <div class="feature-copy">
+            <span class="badge badge-muted">Coming soon</span>
+            <h2 id="upload-heading">UploadDude</h2>
+            <p>YouTube automation for creators — auto-edit, captions, and scheduling in one Dude-family app.</p>
+            <ul class="feature-list">
+              <li><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Auto-edit helpers for faster uploads</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Captions built for creator workflows</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Scheduling so you publish on time</span></li>
+            </ul>
+            <p class="price-line">Pricing: <strong>Coming soon</strong>.</p>
+            <form class="notify-form" action="https://formspree.io/f/xnppoqgd" method="POST">
+              <input type="hidden" name="app" value="UploadDude">
+              <label class="visually-hidden" for="notify-upload-apps" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Email for UploadDude launch</label>
+              <input id="notify-upload-apps" type="email" name="email" required placeholder="you@email.com" autocomplete="email">
+              <button class="btn btn-primary" type="submit">Notify me</button>
+            </form>
+          </div>
+        </article>
+        <div class="shot-grid shot-grid--single reveal reveal-delay-1" aria-label="UploadDude preview">
+          <div class="shot-slot shot-slot--filled coming-soon-card">
+            <img src="img/coming-soon.webp" width="780" height="1688" alt="UploadDude coming soon" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="apps-cta">
+      <div class="container">
+        <h2 id="apps-cta">Questions about an app or want early access?</h2>
+        <a class="btn btn-primary" href="contact.html">Contact us</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>&copy; 2026 KTL Tech Hub</span>
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="logo.png" width="40" height="40" alt="KTL Tech Hub logo">
+            <span>KTL Tech Hub</span>
+          </a>
+          <p>Independent studio building privacy-first Android apps and creator tools from India.</p>
+          <div class="social-row">
+<a class="social-link" href="https://instagram.com/chessdude.app" aria-label="Instagram" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"/><path d="M17.5 6.5h.01"/></svg>
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/company/ktl-tech-hub" aria-label="LinkedIn" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+</div>
+        </div>
+        <div class="footer-col">
+          <h4>Apps</h4>
+          <ul>
+            <li><a href="apps.html#mantra-japa">Mantra Japa Counter</a></li>
+            <li><a href="apps.html#chess-dude">Chess Dude</a></li>
+            <li><a href="apps.html#uploaddude">UploadDude</a></li>
+            <li><a href="apps.html">All apps</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html#founder">Founder</a></li>
+            <li><a href="index.html#how-we-work">How we work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mailto:contact@ktltechhub.com">contact@ktltechhub.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="privacy-mantra-japa.html">Mantra Japa privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 KTL Tech Hub. Made with love in India.</span>
+      </div>
     </div>
   </footer>
   <script src="site.js" defer></script>
