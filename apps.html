@@ -14,7 +14,7 @@
   <meta name="twitter:image" content="https://ktltechhub.com/og-banner.png">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
-    {"@type":"SoftwareApplication","name":"Mantra Japa Counter","applicationCategory":"LifestyleApplication","operatingSystem":"Android","offers":{"@type":"Offer","price":"99.00","priceCurrency":"INR"},"publisher":{"@type":"Organization","name":"KTL Tech Hub"}},
+    {"@type":"SoftwareApplication","name":"Mantra Japa Counter","applicationCategory":"LifestyleApplication","operatingSystem":"Android","offers":{"@type":"Offer","price":"0","priceCurrency":"INR","description":"Free during closed testing; pricing announced at launch"},"publisher":{"@type":"Organization","name":"KTL Tech Hub"}},
     {"@type":"SoftwareApplication","name":"Chess Dude","applicationCategory":"EducationalApplication","operatingSystem":"Android","offers":{"@type":"Offer","price":"99.00","priceCurrency":"INR"},"publisher":{"@type":"Organization","name":"KTL Tech Hub"}},
     {"@type":"SoftwareApplication","name":"UploadDude","applicationCategory":"MultimediaApplication","operatingSystem":"Android","offers":{"@type":"Offer","price":"0","priceCurrency":"INR","availability":"https://schema.org/ComingSoon"},"publisher":{"@type":"Organization","name":"KTL Tech Hub"}}
   ]}
@@ -45,11 +45,11 @@
   </header>
 
   <main>
-    <div class="page-hero">
+    <div class="page-hero page-hero--apps">
       <div class="container">
         <p class="eyebrow">Google Play · KTL Tech Hub</p>
         <h1>Apps</h1>
-        <p>Three privacy-first Android products — practice, learning, and creator automation.</p>
+        <p class="page-hero-sub">Privacy-first Android tools for daily practice, chess learning, and creator workflows.</p>
         <nav class="app-jump" aria-label="Jump to app">
           <a href="#mantra-japa">Mantra Japa Counter</a>
           <a href="#chess-dude">Chess Dude</a>
@@ -82,20 +82,25 @@
               <li><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Reminders and badges to keep practice going</span></li>
               <li><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Optional Google sign-in; published privacy policy</span></li>
             </ul>
-            <div class="price-table" aria-label="Mantra Japa pricing">
-              <div class="price-card"><div class="plan">Monthly</div><div class="amount">₹99</div><p class="note">per month</p></div>
-              <div class="price-card"><div class="plan">Yearly</div><div class="amount">₹599</div><p class="note">per year</p></div>
-              <div class="price-card"><div class="plan">Testing</div><div class="amount">Join</div><p class="note">closed testing on Play</p></div>
+            <div class="price-table price-table--single" aria-label="Mantra Japa pricing">
+              <div class="price-card">
+                <div class="plan">Closed testing</div>
+                <div class="amount">Free during testing</div>
+                <p class="note">Pricing at launch</p>
+              </div>
             </div>
             <a class="btn btn-primary" href="https://play.google.com/apps/testing/com.ktltechhub.mantrajapa" rel="noopener noreferrer">Join closed testing</a>
             <p class="app-meta" style="margin-top:0.9rem;font-size:0.9rem;color:var(--muted)"><a href="privacy.html">Privacy policy</a> · <a href="privacy-mantra-japa.html">Mantra Japa privacy</a></p>
           </div>
         </article>
-        <div class="shot-grid reveal reveal-delay-1" aria-label="Mantra Japa screenshots">
-          <div class="shot-slot shot-slot--filled"><img src="img/mantra-1.webp" width="780" height="1386" alt="Mantra Japa Counter — counter screen" loading="lazy"></div>
-          <div class="shot-slot shot-slot--filled"><img src="img/mantra-2.webp" width="780" height="1386" alt="Mantra Japa Counter — mantras screen" loading="lazy"></div>
-          <div class="shot-slot shot-slot--filled"><img src="img/mantra-3.webp" width="780" height="1386" alt="Mantra Japa Counter — badges screen" loading="lazy"></div>
+        <div class="shot-gallery reveal reveal-delay-1" role="region" aria-roledescription="carousel" aria-label="Mantra Japa screenshots" tabindex="0">
+          <ul class="shot-track">
+            <li class="shot-slide"><img src="img/mantra-1.webp" width="780" height="1386" alt="Mantra Japa Counter — counter screen" loading="lazy"></li>
+            <li class="shot-slide"><img src="img/mantra-2.webp" width="780" height="1386" alt="Mantra Japa Counter — mantras screen" loading="lazy"></li>
+            <li class="shot-slide"><img src="img/mantra-3.webp" width="780" height="1386" alt="Mantra Japa Counter — badges screen" loading="lazy"></li>
+          </ul>
         </div>
+        <p class="shot-hint">Swipe to see more screens</p>
       </div>
     </section>
 
@@ -136,13 +141,23 @@
             </form>
           </div>
         </article>
-        <div class="shot-grid reveal reveal-delay-1" aria-label="Chess Dude screenshots">
-          <div class="shot-slot shot-slot--filled"><img src="img/chess-1.webp" width="780" height="1688" alt="Chess Dude — home" loading="lazy"></div>
-          <div class="shot-slot shot-slot--filled"><img src="img/chess-2.webp" width="780" height="1688" alt="Chess Dude — in game" loading="lazy"></div>
-          <div class="shot-slot shot-slot--filled"><img src="img/chess-3.webp" width="780" height="1688" alt="Chess Dude — puzzle" loading="lazy"></div>
+        <div class="shot-gallery reveal reveal-delay-1" role="region" aria-roledescription="carousel" aria-label="Chess Dude screenshots" tabindex="0">
+          <ul class="shot-track">
+            <li class="shot-slide"><img src="img/chess-1.webp" width="780" height="1688" alt="Chess Dude — home" loading="lazy"></li>
+            <li class="shot-slide"><img src="img/chess-2.webp" width="780" height="1688" alt="Chess Dude — in game" loading="lazy"></li>
+            <li class="shot-slide"><img src="img/chess-3.webp" width="780" height="1688" alt="Chess Dude — puzzle" loading="lazy"></li>
+          </ul>
         </div>
-        <p class="reveal" style="margin-top:1rem;color:var(--muted);font-size:0.9rem">Also crafting 3D piece art for the board — preview below.</p>
-        <img class="reveal reveal-delay-1" src="img/chess-pieces.webp" width="1024" height="438" alt="Chess Dude 3D piece renders" loading="lazy" style="width:100%;max-width:720px;border-radius:16px;border:1px solid var(--glass-border);margin-top:0.5rem">
+        <p class="shot-hint">Swipe to see more screens</p>
+
+        <aside class="bts-card reveal reveal-delay-1" aria-labelledby="chess-bts-heading">
+          <p class="bts-label">Behind the scenes</p>
+          <h3 id="chess-bts-heading">Chess Dude — Premium v2 pieces</h3>
+          <p class="bts-copy">Crafting board-ready 3D piece art for the premium board experience.</p>
+          <div class="bts-frame">
+            <img src="img/chess-pieces.webp" width="1024" height="438" alt="Chess Dude Premium v2 3D piece renders" loading="lazy">
+          </div>
+        </aside>
       </div>
     </section>
 
@@ -152,10 +167,34 @@
         <article class="feature-row reveal">
           <div class="feature-media">
             <div class="phone">
-              <div class="phone-screen" style="display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.75rem;padding:1.5rem;text-align:center">
-                <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" style="width:48px;height:48px"><path d="M12 16V4"/><path d="m8 8 4-4 4 4"/><path d="M20 16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2"/></svg>
-                <span style="font-family:var(--font-display);font-weight:700;color:var(--text)">UploadDude</span>
-                <span style="font-size:0.85rem;color:var(--muted)">Coming soon</span>
+              <div class="phone-screen phone-screen--mock">
+                <div class="ud-mock" aria-hidden="true">
+                  <div class="ud-mock-top">
+                    <span class="ud-mock-title">UploadDude</span>
+                    <span class="ud-mock-chip">Coming soon</span>
+                  </div>
+                  <div class="ud-drop">
+                    <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 16V4"/><path d="m8 8 4-4 4 4"/><path d="M20 16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2"/></svg>
+                    <span>Drop video here</span>
+                    <small>MP4 · MOV · up to 2 GB</small>
+                  </div>
+                  <div class="ud-file">
+                    <div class="ud-file-meta">
+                      <span class="ud-file-name">creator_cut_01.mp4</span>
+                      <span class="ud-file-pct">62%</span>
+                    </div>
+                    <div class="ud-progress" role="presentation"><span style="width:62%"></span></div>
+                  </div>
+                  <label class="ud-field">
+                    <span>Title</span>
+                    <span class="ud-input">Morning practice vlog</span>
+                  </label>
+                  <label class="ud-field">
+                    <span>Captions</span>
+                    <span class="ud-input ud-input--multi">Auto captions draft…</span>
+                  </label>
+                  <button class="ud-schedule" type="button" tabindex="-1">Schedule upload</button>
+                </div>
               </div>
             </div>
           </div>
@@ -177,11 +216,6 @@
             </form>
           </div>
         </article>
-        <div class="shot-grid shot-grid--single reveal reveal-delay-1" aria-label="UploadDude preview">
-          <div class="shot-slot shot-slot--filled coming-soon-card">
-            <img src="img/coming-soon.webp" width="780" height="1688" alt="UploadDude coming soon" loading="lazy">
-          </div>
-        </div>
       </div>
     </section>
 
@@ -203,13 +237,13 @@
           </a>
           <p>Independent studio building privacy-first Android apps and creator tools from India.</p>
           <div class="social-row">
-<a class="social-link" href="https://instagram.com/chessdude.app" aria-label="Instagram" rel="noopener noreferrer">
+            <a class="social-link" href="https://instagram.com/chessdude.app" aria-label="Chess Dude on Instagram" title="Chess Dude on Instagram" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"/><path d="M17.5 6.5h.01"/></svg>
             </a>
             <a class="social-link" href="https://www.linkedin.com/company/ktl-tech-hub" aria-label="LinkedIn" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             </a>
-</div>
+          </div>
         </div>
         <div class="footer-col">
           <h4>Apps</h4>
