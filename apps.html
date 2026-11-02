@@ -16,7 +16,7 @@
   {"@context":"https://schema.org","@graph":[
     {"@type":"SoftwareApplication","name":"Mantra Japa Counter","applicationCategory":"LifestyleApplication","operatingSystem":"Android","offers":{"@type":"Offer","price":"0","priceCurrency":"INR","description":"Free during closed testing; pricing announced at launch"},"publisher":{"@type":"Organization","name":"KTL Tech Hub"}},
     {"@type":"SoftwareApplication","name":"Chess Dude","applicationCategory":"EducationalApplication","operatingSystem":"Android","offers":{"@type":"Offer","price":"99.00","priceCurrency":"INR"},"publisher":{"@type":"Organization","name":"KTL Tech Hub"}},
-    {"@type":"SoftwareApplication","name":"UploadDude","applicationCategory":"MultimediaApplication","operatingSystem":"Android","offers":{"@type":"Offer","price":"0","priceCurrency":"INR","availability":"https://schema.org/ComingSoon"},"publisher":{"@type":"Organization","name":"KTL Tech Hub"}}
+    {"@type":"SoftwareApplication","name":"UploadDude","applicationCategory":"MultimediaApplication","operatingSystem":"Android","image":"https://ktltechhub.com/icon-uploaddude.png","offers":{"@type":"Offer","price":"0","priceCurrency":"INR","availability":"https://schema.org/ComingSoon"},"publisher":{"@type":"Organization","name":"KTL Tech Hub"}}
   ]}
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -173,7 +173,10 @@
               <div class="phone-screen phone-screen--mock">
                 <div class="ud-mock" aria-hidden="true">
                   <div class="ud-mock-top">
-                    <span class="ud-mock-title">UploadDude</span>
+                    <div class="ud-mock-brand">
+                      <img class="ud-mock-icon" src="icon-uploaddude.png" width="28" height="28" alt="">
+                      <span class="ud-mock-title">UploadDude</span>
+                    </div>
                     <span class="ud-mock-chip">Coming soon</span>
                   </div>
                   <div class="ud-drop">
@@ -197,6 +200,10 @@
                     <span class="ud-input ud-input--multi">Auto captions draft…</span>
                   </label>
                   <button class="ud-schedule" type="button" tabindex="-1">Schedule upload</button>
+                </div>
+                <div class="phone-badge">
+                  <img src="icon-uploaddude.png" width="36" height="36" alt="" loading="lazy">
+                  <span>UploadDude</span>
                 </div>
               </div>
             </div>

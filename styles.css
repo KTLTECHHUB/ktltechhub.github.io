@@ -983,6 +983,21 @@ main { flex: 1; position: relative; }
   display: flex; align-items: center; justify-content: space-between; gap: 0.4rem;
   margin-top: 0.55rem;
 }
+.ud-mock-brand {
+  display: flex; align-items: center; gap: 0.45rem; min-width: 0;
+}
+.phone-screen .ud-mock-icon,
+.ud-mock-icon {
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 7px;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  background: transparent;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
 .ud-mock-title {
   font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; color: var(--white);
 }
