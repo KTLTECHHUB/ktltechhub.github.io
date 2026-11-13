@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Chess Dude</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 2rem 1.25rem 3rem;
+      font-family: "Noto Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #f7f4ee;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem 1.6rem 2.4rem;
+      border: 1px solid #e6e0d4;
+      border-radius: 12px;
+    }
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.85rem;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+    .meta {
+      color: #444;
+      font-size: 0.95rem;
+      margin: 0 0 1.5rem;
+    }
+    .meta p { margin: 0.15rem 0; }
+    h2 {
+      margin: 1.7rem 0 0.5rem;
+      font-size: 1.2rem;
+      line-height: 1.3;
+    }
+    p, li { margin: 0 0 0.7rem; }
+    ul { margin: 0 0 0.7rem; padding-left: 1.25rem; }
+    li { margin-bottom: 0.35rem; }
+    a { color: #0b5c4d; overflow-wrap: anywhere; }
+    .note { color: #333; }
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e6e0d4;
+      color: #555;
+      font-size: 0.92rem;
+    }
+    @page { size: A4; margin: 16mm 16mm 18mm; }
+    @media print {
+      body { background: #fff; padding: 0; }
+      main { border: none; border-radius: 0; padding: 0; max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <p><strong>Chess Dude</strong> (Android app)</p>
+      <p>Package: com.ktltechhub.checkmatetamizha</p>
+      <p>Developer: KTL Tech Hub</p>
+      <p>Effective date: 13 November 2026</p>
+    </div>
+
+    <p>This policy explains what Chess Dude does with information on your phone, and when the app uses the internet. We describe only practices present in the current app. We do not sell your information, we do not show ads, and we do not run analytics in the app.</p>
+
+    <h2>Data kept on your phone</h2>
+    <p>Chess Dude does not create an account and has no account server. Your player name, language, country choice, avatar, streak, puzzle rating, lesson progress, game results, settings, optional Chess.com or Lichess username, and similar progress stay on this phone.</p>
+    <p>The app does not read your location or contacts. Android cloud backup of app data is turned off, so this progress is not copied to a Google backup.</p>
+
+    <h2>Optional photo for the board background</h2>
+    <p>If you choose “Pick from gallery,” the app opens the system photo picker so you can select one picture. A copy is saved only in the app’s own storage and used as a board background. That picture is not uploaded, and the app does not ask for broad access to your files or photos.</p>
+
+    <h2>When the app uses the internet</h2>
+    <p>Lessons, puzzles, and games against the built-in computer work offline. The app uses the network only in these cases:</p>
+    <ul>
+      <li><strong>Chess.com or Lichess (optional).</strong> If you type a Chess.com or Lichess username, the app sends that username to that site over HTTPS and fetches a few of your public games so you can review them in the app. It does not log into those sites for you.</li>
+      <li><strong>Launch offer settings.</strong> The app may download a small offer configuration file over HTTPS from <a href="https://ktltechhub.github.io/chess-dude/offer.json">https://ktltechhub.github.io/chess-dude/offer.json</a> (hosted on GitHub Pages). This file only describes whether a lifetime offer is on, and its dates and badge. The request includes a User-Agent that names the app, version, package, and our contact email.</li>
+      <li><strong>A time check for a free review.</strong> To time a free Coach Max review fairly, the app may request the current time from Cloudflare (<a href="https://www.cloudflare.com/cdn-cgi/trace">https://www.cloudflare.com/cdn-cgi/trace</a>) or, if that fails, from Google (<a href="https://www.google.com/generate_204">https://www.google.com/generate_204</a>). Only the timestamp is used. Those services may see your IP address the way any website would. We do not receive or store your IP address from these requests.</li>
+      <li><strong>Google Play Billing.</strong> If you buy or restore Premium, payment is handled by Google Play. Card numbers never enter the app. The app checks with Play on this device whether you own a monthly subscription (<code>premium_monthly</code>), a yearly subscription (<code>premium_yearly</code>), or a lifetime purchase (<code>premium_lifetime</code>). The app does not send purchase tokens to our own server (there is no such server in this app).</li>
+    </ul>
+    <p class="note">All of these connections use HTTPS. The app does not allow cleartext (unencrypted) HTTP. Like any internet request, the destination (and, for the offer file, the host of that page) may see standard connection information such as an IP address. We do not use this to track you, and we do not run advertising or analytics SDKs.</p>
+
+    <h2>Permissions</h2>
+    <p>Chess Dude asks Android for:</p>
+    <ul>
+      <li><strong>Internet</strong> — for the uses listed above, and to talk to Google Play for purchases.</li>
+      <li><strong>Billing</strong> — Google Play purchases and restores.</li>
+      <li><strong>Vibrate</strong> — optional move vibration, which you can turn off in Settings.</li>
+      <li><strong>Notifications</strong> and <strong>boot completed</strong> — an optional daily reminder scheduled on this phone. It stays off until you turn it on. The reminder is not sent through our servers.</li>
+    </ul>
+    <p>The app is built so that location, contacts, storage, camera, microphone, and advertising-ID permissions are not used and are removed if a library tries to add them.</p>
+
+    <h2>No ads and no analytics</h2>
+    <p>The app does not include an advertising SDK or an analytics or crash-reporting SDK. It does not use the advertising ID.</p>
+
+    <h2>How to delete your data</h2>
+    <p>In the app, go to <strong>Settings → Delete my data</strong>. This removes your profile and progress from the app and deletes the board-background photo if you had picked one. Daily reminders are turned off.</p>
+    <p>A few small technical caches on the phone (for example a saved offer window or a local review timer) may remain until you uninstall the app. Uninstalling Chess Dude removes the app’s local data.</p>
+    <p>If you had typed a Chess.com or Lichess username, deleting it in the app only removes it from this phone. It does not change or delete your account or games on those sites. For Premium purchases, manage or cancel subscriptions in Google Play.</p>
+
+    <h2>Children</h2>
+    <p>Chess Dude is intended for people aged 13 and over. It is not directed at children under 13.</p>
+    <p>Chess Dude is a chess learning game. It has no ads, no account sign-in, and no chat with other players. We do not knowingly collect personal information from children under 13. The app has no account server, so progress stays on the phone. If you believe a child under 13 has used the app, you can remove local progress with Settings → Delete my data, or by uninstalling the app, and you can email us at the address below.</p>
+
+    <h2>Changes</h2>
+    <p>If we change how the app handles information, we will update this policy and its effective date.</p>
+
+    <h2>Contact</h2>
+    <p>KTL Tech Hub<br>
+    Email: <a href="mailto:contact@ktltechhub.com">contact@ktltechhub.com</a></p>
+    <p>This is also the address used inside the app (Settings or Profile → Contact).</p>
+
+    <footer>
+      Chess Dude · KTL Tech Hub · Effective 13 November 2026
+    </footer>
+  </main>
+</body>
+</html>
