@@ -1245,3 +1245,25 @@ main { flex: 1; position: relative; }
   color: var(--muted);
   line-height: 1.35;
 }
+
+/* Official Google Play badge — size only, do not recolor or crop */
+.play-badge {
+  display: inline-block;
+  line-height: 0;
+  text-decoration: none;
+}
+.play-badge img {
+  display: block;
+  height: 60px;
+  width: auto;
+}
+.app-compact-actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+.app-compact-actions .app-compact-cta { margin-top: 0; }
+.app-compact-actions .play-badge img { height: 52px; }
+.feature-copy .play-badge { margin-top: 0.35rem; }
